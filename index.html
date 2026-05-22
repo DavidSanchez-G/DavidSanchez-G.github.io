@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portafolio personal de David Sánchez Goñi – Desarrollador Web Full Stack. Proyectos, habilidades y experiencia profesional." />
+  <title>David Sánchez Goñi | Desarrollador Web</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ── CURSOR FOLLOWER ── -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">DSG<span class="accent">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">Sobre mí</a></li>
+        <li><a href="#skills" class="nav-link">Habilidades</a></li>
+        <li><a href="#projects" class="nav-link">Proyectos</a></li>
+        <li><a href="#education" class="nav-link">Formación</a></li>
+        <li><a href="#contact" class="nav-link">Contacto</a></li>
+        <li class="nav-cv-item" style="margin-left: 1rem; display: flex; gap: 0.5rem;">
+          <a href="David_Sanchez_cv.pdf" target="_blank" class="btn btn-outline btn-sm" title="Abrir CV">
+            <i class="fas fa-eye"></i> CV
+          </a>
+          <a href="https://raw.githubusercontent.com/DavidSanchez-G/DavidSanchez-G.github.io/main/David_Sanchez_cv.pdf"
+            class="btn btn-outline btn-sm" target="_blank" title="Descargar CV" aria-label="Descargar CV"
+            style="padding-left: 0.6rem; padding-right: 0.6rem;">
+            <i class="fas fa-download"></i>
+          </a>
+        </li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting" data-aos="fade-down">Hola, soy 👋</p>
+      <h1 class="hero-name" data-aos="fade-up">David <span class="accent">Sánchez Goñi</span></h1>
+      <p class="hero-typewriter" data-aos="fade-up" data-aos-delay="200">
+        <span class="typewriter-prefix">Soy </span>
+        <span class="typewriter-text" id="typewriter"></span>
+        <span class="typewriter-cursor">|</span>
+      </p>
+      <p class="hero-description" data-aos="fade-up" data-aos-delay="300">
+        Apasionado por la informática y el desarrollo de soluciones tecnológicas innovadoras.
+        Enfoque full-stack con sólidos conocimientos en PHP, HTML, CSS, MySQL y PostgreSQL.
+      </p>
+      <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
+        <a href="#projects" class="btn btn-primary">Ver proyectos <i class="fas fa-arrow-right"></i></a>
+        <a href="#contact" class="btn btn-ghost">Contactar</a>
+      </div>
+      <address class="hero-socials" data-aos="fade-up" data-aos-delay="500">
+        <a href="https://github.com/DavidSanchez-G" target="_blank" rel="noopener" class="social-link"
+          aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:sanchezgonidavid@gmail.com" class="social-link" aria-label="Email"
+          data-copy-email="sanchezgonidavid@gmail.com">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="tel:+34659096761" class="social-link" aria-label="Teléfono">
+          <i class="fas fa-phone"></i>
+        </a>
+      </address>
+    </div>
+
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section class="about section" id="about">
+    <div class="container">
+      <header class="section-header" data-aos="fade-up">
+        <span class="section-tag">01. Quién soy</span>
+        <h2 class="section-title">Sobre <span class="accent">mí</span></h2>
+      </header>
+      <div class="about-grid">
+        <figure class="about-image-wrapper" data-aos="fade-right">
+          <div class="about-image-frame">
+            <div class="about-avatar">
+              <span>DSG</span>
+            </div>
+            <div class="about-image-deco"></div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number" data-target="4">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Proyectos</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="8">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Tecnologías</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="4">0</span>
+              <span class="stat-label">Años form.</span>
+            </div>
+          </div>
+        </figure>
+        <article class="about-text" data-aos="fade-left">
+          <p>
+            Soy <strong>David Sánchez Goñi</strong>, un apasionado de la informática y la tecnología,
+            motivado por el desarrollo de soluciones tecnológicas innovadoras.
+          </p>
+          <p>
+            Cuento con formación en desarrollo web y sistemas, con un enfoque <strong>full-stack</strong>
+            y conocimientos sólidos en <strong>PHP, HTML, CSS, MySQL y PostgreSQL</strong>, así como en el
+            despliegue de aplicaciones utilizando <strong>Ubuntu Server y Apache</strong>.
+          </p>
+          <p>
+            Poseo experiencia en proyectos reales y trabajo en equipo bajo <strong>metodologías ágiles
+              (Scrum/Kanban)</strong>.
+            Me distingo por una actitud proactiva y un enfoque en la mejora continua, buscando siempre
+            entregar soluciones eficientes. Valoro la puntualidad, la responsabilidad y la calidad técnica.
+          </p>
+          <address class="about-badges">
+            <span class="badge"><i class="fas fa-map-marker-alt"></i> Zaragoza, España</span>
+            <span class="badge"><i class="fas fa-graduation-cap"></i> DAW – Campus Digital</span>
+            <span class="badge"><i class="fas fa-language"></i> Inglés B2</span>
+          </address>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <header class="section-header" data-aos="fade-up">
+        <span class="section-tag">02. Qué sé hacer</span>
+        <h2 class="section-title">Habilidades <span class="accent">técnicas</span></h2>
+      </header>
+
+      <div class="skills-tabs" data-aos="fade-up">
+        <button class="tab-btn active" id="btn-frontend" data-tab="frontend">Frontend</button>
+        <button class="tab-btn" id="btn-backend" data-tab="backend">Backend &amp; DB</button>
+        <button class="tab-btn" id="btn-tools" data-tab="tools">Herramientas</button>
+      </div>
+
+      <!-- Frontend -->
+      <article class="skills-panel" id="tab-frontend" style="display:block;">
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="skill-icon html"><i class="fab fa-html5"></i></div>
+            <span class="skill-name">HTML5</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:90%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon css"><i class="fab fa-css3-alt"></i></div>
+            <span class="skill-name">CSS3 / Responsive</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:85%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon js"><i class="fab fa-js"></i></div>
+            <span class="skill-name">JavaScript</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:72%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon generic"><i class="fas fa-mobile-alt"></i></div>
+            <span class="skill-name">Diseño Responsive</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:88%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon generic"><i class="fas fa-code"></i></div>
+            <span class="skill-name">Lenguajes de Marcado</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:90%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon generic"><i class="fas fa-bug"></i></div>
+            <span class="skill-name">Testing &amp; Debugging</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:70%"></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Backend & DB -->
+      <article class="skills-panel" id="tab-backend" style="display:none;">
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="skill-icon php"><i class="fab fa-php"></i></div>
+            <span class="skill-name">PHP</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:82%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon generic"><i class="fas fa-database"></i></div>
+            <span class="skill-name">MySQL</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:80%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon generic"><i class="fas fa-server"></i></div>
+            <span class="skill-name">PostgreSQL</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:75%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon generic"><i class="fas fa-network-wired"></i></div>
+            <span class="skill-name">Apache HTTP Server</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:78%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon generic"><i class="fas fa-cube"></i></div>
+            <span class="skill-name">POO – Programación OO</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:72%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon generic"><i class="fas fa-table"></i></div>
+            <span class="skill-name">Gestión de Bases de Datos</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:80%"></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Herramientas -->
+      <article class="skills-panel" id="tab-tools" style="display:none;">
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="skill-icon git"><i class="fab fa-git-alt"></i></div>
+            <span class="skill-name">Git / GitHub</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:80%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon generic"><i class="fab fa-ubuntu"></i></div>
+            <span class="skill-name">Ubuntu / Ubuntu Server</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:75%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon generic"><i class="fab fa-windows"></i></div>
+            <span class="skill-name">Microsoft Windows</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:85%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon generic"><i class="fas fa-terminal"></i></div>
+            <span class="skill-name">IDEs &amp; Entornos Dev</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:82%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon generic"><i class="fas fa-sync-alt"></i></div>
+            <span class="skill-name">Scrum / Kanban</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:75%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon generic"><i class="fas fa-users"></i></div>
+            <span class="skill-name">Trabajo en Equipo</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--pct:88%"></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <header class="section-header" data-aos="fade-up">
+        <span class="section-tag">03. Lo que he construído</span>
+        <h2 class="section-title">Proyectos <span class="accent">destacados</span></h2>
+      </header>
+
+      <div class="projects-carousel" data-aos="fade-up" id="projectsCarousel">
+
+        <div class="carousel-area">
+          <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Proyecto anterior">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+
+          <div class="carousel-viewport" id="carouselViewport">
+            <div class="carousel-track" id="carouselTrack">
+
+              <article class="project-card featured">
+                <div class="project-featured-badge">⭐ Proyecto Real</div>
+                <div class="project-image">
+                  <div class="project-placeholder p2">
+                    <i class="fas fa-book-open"></i>
+                  </div>
+                  <div class="project-overlay">
+                    <div class="project-links">
+                      <a href="https://github.com/DavidSanchez-G/Proyecto-Biblioteca" target="_blank" rel="noopener"
+                        class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-info">
+                  <div class="project-type">Aplicación Web Full Stack</div>
+                  <h3 class="project-title">Digitalización de una Biblioteca</h3>
+                  <div class="project-date"><i class="fas fa-calendar-alt"></i> Nov 2025 – Feb 2026</div>
+                  <p class="project-desc">
+                    Desarrollo de una aplicación web full-stack para la gestión de catálogos y préstamos bibliotecarios.
+                    Incluyó el diseño e implementación de una infraestructura de red local y el despliegue en un
+                    servidor LAMP on-premises en un entorno real de trabajo en equipo.
+                  </p>
+                  <ul class="project-bullets">
+                    <li><i class="fas fa-check"></i> Desarrollo web full-stack con PHP, JavaScript, HTML y CSS</li>
+                    <li><i class="fas fa-check"></i> Diseño e implementación de infraestructura de red local</li>
+                    <li><i class="fas fa-check"></i> Instalación y configuración de servidor LAMP (Ubuntu Server, Apache, MySQL, PHP)</li>
+                    <li><i class="fas fa-check"></i> Despliegue on-premises en entorno real</li>
+                    <li><i class="fas fa-check"></i> Uso de IA como apoyo al desarrollo</li>
+                    <li><i class="fas fa-check"></i> Trabajo en equipo con metodología ágil</li>
+                  </ul>
+                  <div class="project-tags">
+                    <span>PHP</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span>
+                    <span>MySQL</span><span>Apache</span><span>Ubuntu Server</span><span>LAMP</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-featured-badge">🤝 ONG</div>
+                <div class="project-image">
+                  <div class="project-placeholder p3">
+                    <i class="fas fa-hands-helping"></i>
+                  </div>
+                  <div class="project-overlay">
+                    <div class="project-links">
+                      <a href="https://github.com/DavidSanchez-G" target="_blank" rel="noopener"
+                        class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-info">
+                  <div class="project-type">Plataforma Web · CMS</div>
+                  <h3 class="project-title">Blog de Orientación Laboral – Médicos del Mundo</h3>
+                  <div class="project-date"><i class="fas fa-calendar-alt"></i> Feb 2026 – May 2026</div>
+                  <p class="project-desc">
+                    Plataforma digital diseñada para apoyar a la ONG en el asesoramiento laboral de mujeres víctimas
+                    de violencia y explotación, con gestión de roles y organización dinámica de contenidos.
+                  </p>
+                  <ul class="project-bullets">
+                    <li><i class="fas fa-check"></i> Interfaz de usuario intuitiva y accesible con HTML y CSS</li>
+                    <li><i class="fas fa-check"></i> CMS en entorno LAMP con gestión de roles de usuario</li>
+                    <li><i class="fas fa-check"></i> Organización dinámica de contenidos (F.A.Q., publicaciones y recursos)</li>
+                    <li><i class="fas fa-check"></i> Gestión del flujo de trabajo con Scrum y Kanban</li>
+                  </ul>
+                  <div class="project-tags">
+                    <span>PHP</span><span>HTML5</span><span>CSS3</span><span>MySQL</span>
+                    <span>LAMP</span><span>Scrum</span><span>Kanban</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-featured-badge">🖥️ Gestión</div>
+                <div class="project-image">
+                  <div class="project-placeholder p1">
+                    <i class="fas fa-desktop"></i>
+                  </div>
+                  <div class="project-overlay">
+                    <div class="project-links">
+                      <a href="https://github.com/DavidSanchez-G" target="_blank" rel="noopener"
+                        class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-info">
+                  <div class="project-type">Aplicación Web Full Stack</div>
+                  <h3 class="project-title">Gestor de Equipamiento Informático</h3>
+                  <div class="project-date"><i class="fas fa-calendar-alt"></i> Oct 2025 – Nov 2025</div>
+                  <p class="project-desc">
+                    Sistema de gestión con roles para la solicitud de equipos informáticos y gestión de incidencias,
+                    desarrollado en entorno WAMP con una interfaz interactiva y trabajo en equipo.
+                  </p>
+                  <ul class="project-bullets">
+                    <li><i class="fas fa-check"></i> Sistema de gestión con roles (solicitud de equipos e incidencias)</li>
+                    <li><i class="fas fa-check"></i> Desarrollo full-stack bajo arquitectura WAMP</li>
+                    <li><i class="fas fa-check"></i> Interfaz interactiva con HTML, CSS y JavaScript</li>
+                    <li><i class="fas fa-check"></i> Coordinación de lógica de negocio con necesidades de usuarios finales</li>
+                  </ul>
+                  <div class="project-tags">
+                    <span>PHP</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span>
+                    <span>MySQL</span><span>WAMP</span>
+                  </div>
+                </div>
+              </article>
+
+            </div><!-- /.carousel-track -->
+          </div><!-- /.carousel-viewport -->
+
+          <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Proyecto siguiente">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div><!-- /.carousel-area -->
+
+        <div class="carousel-dots" id="carouselDots"></div>
+
+      </div><!-- /.projects-carousel -->
+    </div>
+  </section>
+
+  <!-- ── EDUCATION ── -->
+  <section class="experience section" id="education">
+    <div class="container">
+      <header class="section-header" data-aos="fade-up">
+        <span class="section-tag">04. Mi recorrido</span>
+        <h2 class="section-title">Formación <span class="accent">académica</span></h2>
+      </header>
+
+      <div class="timeline active" id="timeline-education" style="display:block;">
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <article class="timeline-content">
+            <span class="timeline-date">Sep 2025 – Actualidad</span>
+            <h3>Grado Superior en Desarrollo de Aplicaciones Web</h3>
+            <h4>Campus Digital · Zaragoza, España <span class="mec-badge">MEC Nivel 5</span></h4>
+            <p>Formación especializada en desarrollo web full-stack, diseño de interfaces adaptables, programación
+              backend con PHP y gestión de bases de datos MySQL/PostgreSQL. Trabajo en equipo con metodologías ágiles
+              (Scrum/Kanban) y control de versiones con Git.</p>
+            <div class="timeline-tags">
+              <span>HTML/CSS/JS</span><span>PHP</span><span>MySQL</span><span>PostgreSQL</span><span>Git</span><span>Scrum</span><span>Ubuntu
+                Server</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+          <div class="timeline-dot"></div>
+          <article class="timeline-content">
+            <span class="timeline-date">Sep 2016 – Jun 2019</span>
+            <h3>Ingeniería Informática <span class="unfinished-badge">Sin terminar</span></h3>
+            <h4>Campus Río Ebro – Universidad de Zaragoza · Zaragoza, España <span class="mec-badge">MEC Nivel 6</span>
+            </h4>
+            <p>Adquisición de bases sólidas en programación, algoritmos, estructuras de datos y arquitectura de
+              computadores. Desarrollo del pensamiento lógico-analítico y uso de entornos de desarrollo (IDEs).</p>
+            <div class="timeline-tags">
+              <span>Algoritmos</span><span>Estructuras de datos</span><span>Arquitectura</span><span>IDEs</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+          <div class="timeline-dot"></div>
+          <article class="timeline-content">
+            <span class="timeline-date">Sep 2014 – Jun 2016</span>
+            <h3>Bachillerato de Ciencias y Tecnología</h3>
+            <h4>I.E.S Reyes Católicos · Ejea de los Caballeros, España <span class="mec-badge">MEC Nivel 4</span></h4>
+            <p>Formación en pensamiento lógico-matemático, resolución de problemas, percepción espacial y dibujo
+              técnico. Introducción al uso de herramientas digitales y tecnología.</p>
+            <div class="timeline-tags">
+              <span>Matemáticas</span><span>Tecnología</span><span>Dibujo Técnico</span>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- IDIOMAS -->
+      <section class="languages-section" data-aos="fade-up">
+        <h3 class="languages-title">Idiomas</h3>
+        <div class="languages-grid">
+          <article class="lang-card">
+            <div class="lang-flag">🇪🇸</div>
+            <div class="lang-info">
+              <span class="lang-name">Español</span>
+              <span class="lang-level native">Lengua materna</span>
+            </div>
+          </article>
+          <article class="lang-card">
+            <div class="lang-flag">🇬🇧</div>
+            <div class="lang-info">
+              <span class="lang-name">Inglés</span>
+              <span class="lang-level b2">B2 – Independiente</span>
+            </div>
+            <div class="lang-skills">
+              <span>Comprensión: B2</span>
+              <span>Expresión: B2</span>
+              <span>Oral: B2</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <header class="section-header" data-aos="fade-up">
+        <span class="section-tag">05. Hablemos</span>
+        <h2 class="section-title">¿Hablamos?</h2>
+        <p class="section-subtitle">Estoy disponible para prácticas, proyectos o cualquier oportunidad. No dudes en
+          contactarme.</p>
+      </header>
+
+      <div class="contact-grid">
+        <address class="contact-info" data-aos="fade-right">
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <p class="contact-label">Email</p>
+              <a href="mailto:sanchezgonidavid@gmail.com" class="contact-value">sanchezgonidavid@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <p class="contact-label">Teléfono</p>
+              <a href="tel:+34659096761" class="contact-value">(+34) 659 096 761</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <p class="contact-label">GitHub</p>
+              <a href="https://github.com/DavidSanchez-G" target="_blank" rel="noopener"
+                class="contact-value">github.com/DavidSanchez-G</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <p class="contact-label">Ubicación</p>
+              <span class="contact-value">Zaragoza, España 🇪🇸 </span>
+            </div>
+          </div>
+        </address>
+
+        <form class="contact-form" id="contactForm" data-aos="fade-left" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Asunto</label>
+            <input type="text" id="subject" name="subject" placeholder="¿En qué puedo ayudarte?" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu propuesta..."
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span class="btn-text">Enviar mensaje <i class="fas fa-paper-plane"></i></span>
+            <span class="btn-loading hidden"><i class="fas fa-spinner fa-spin"></i> Enviando...</span>
+          </button>
+          <output class="form-success hidden" id="formSuccess">
+            <i class="fas fa-check-circle"></i> ¡Mensaje enviado!
+          </output>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#hero" class="footer-logo">DSG<span class="accent">.</span></a>
+        <p class="footer-text">Diseñado y construido por David Sánchez Goñi</p>
+        <address class="footer-socials">
+          <a href="https://github.com/DavidSanchez-G" target="_blank" rel="noopener" aria-label="GitHub"><i
+              class="fab fa-github"></i></a>
+          <a href="mailto:sanchezgonidavid@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="tel:+34659096761" aria-label="Teléfono"><i class="fas fa-phone"></i></a>
+        </address>
+      </div>
+      <p class="footer-copy">© 2026 David Sánchez Goñi · Zaragoza, España</p>
+    </div>
+  </footer>
+
+  <!-- ── BACK TO TOP ── -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ── TOAST NOTIFICATION ── -->
+  <div id="copyToast" style="
+    position:fixed; bottom:32px; left:50%; transform:translateX(-50%) translateY(20px);
+    background:#7c5cfc; color:#fff; padding:12px 24px; border-radius:50px;
+    font-size:.9rem; font-weight:600; box-shadow:0 8px 32px rgba(124,92,252,0.4);
+    opacity:0; transition:opacity .3s ease, transform .3s ease; z-index:9999;
+    pointer-events:none; white-space:nowrap;
+  ">✅ Email copiado al portapapeles</div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
